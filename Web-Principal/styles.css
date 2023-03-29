@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 100px;
+    padding: 210px;
     background-color:#168AAD;
     text-align: center  ;
     background-image: url(assets/Niña\ jugando.gif);
@@ -29,17 +29,31 @@ header {
     overflow: hidden;
     color: #fff;
     font-family: 'Press Start 2P', cursive;
+    flex-basis: 20rem;
+    flex-grow: 1;
     }
 
 header .head-image-kaki img{
-    width: 250px;
+    width: 200px;
     display: flex;
     align-items: center;
     padding: 20px;
     margin: 0;
     border-radius: 100px;
-    border-style: double;
+    border-style: groove;
     cursor: pointer;
+}
+
+header .head-image-kaki .social-media{
+    display: flexbox;
+    justify-content: center;
+    margin: 10px;
+    
+}
+
+.fa-brands {
+    color: #fff;
+    width: 40px;
 }
 
 /*Estilos del nav */
@@ -55,7 +69,9 @@ header .head-image-kaki img{
     font-family: 'Press Start 2P', cursive;
     font-size: 1.25rem;
     position: relative;
-
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 60%;
 }
 
 .main-buttons a{
@@ -198,32 +214,4 @@ header .head-image-kaki img{
     transform: translate(12px, 12px);
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
 
-aside {
-    flex: 20%;
-    background-color: #52B69A;
-    padding: 20px;
-}
-
-section{
-    flex: 80%;
-    background-color: #52B69A;
-    padding: 20px;
-}
-
-footer{
-    padding: 50px;
-    background-color:#168AAD;
-    text-align: center  ;
-}
-
-@media screen and (max-width: 700px) {
-    nav, .row{
-        flex-direction: column;
-    }
-    
-}
