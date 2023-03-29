@@ -1,0 +1,86 @@
+/* Estilo General */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilo del Header*/
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color:#168AAD;
+    text-align: center  ;
+    background-image: url(assets/Niña\ jugando.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    }
+
+header .head-image-kaki img{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    border-radius: 100px;
+    border-style: double;
+    cursor: pointer;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #34A0A4;
+}
+ nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+ }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 20%;
+    background-color: #52B69A;
+    padding: 20px;
+}
+
+section{
+    flex: 80%;
+    background-color: #52B69A;
+    padding: 20px;
+}
+
+footer{
+    padding: 50px;
+    background-color:#168AAD;
+    text-align: center  ;
+}
+
+@media screen and (max-width: 700px) {
+    nav, .row{
+        flex-direction: column;
+    }
+    
+}
